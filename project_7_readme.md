@@ -1,6 +1,6 @@
 # Project 7 - WordPress Pentesting
 
-Time spent: **X** hours spent in total
+Time spent: 6 hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
@@ -33,15 +33,15 @@ Time spent: **X** hours spent in total
   - [ ] Steps to recreate: To recreate this simply type the following text in a post and upload: TEST!!![caption width="1" caption='<a href="' ">]</a><a href="http://onMouseOver='alert(1)'">Hack Me</a>
   - [ ] Affected source code: shortcodes.php
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.2.2/src/wp-includes/shortcodes.php)
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+1. (Optional) Vulnerability Name or IDWordPress 3.6.0-4.7.2 - Authenticated Cross-Site Scripting (XSS) via Media File Metadata
+  - [ ] Summary: This XSS exploit basically uploads a mp3 file with a structered name for the file which would trigger the exploit.
+    - Vulnerability types:Cross-Site Scripting (XSS)
+    - Tested in version:4.2.2
+    - Fixed in version: 4.7.3
+  - [ ] GIF Walkthrough: ![Lab8_Chal4](https://user-images.githubusercontent.com/32075350/55767033-39c58500-5a45-11e9-9f3e-cebc26138e9d.gif)
+  - [ ] Steps to recreate: To recreate this exlpoit basically upload a mp3 file for which in the description you type: "[FILENAME]</nonscript><script>alert(document.cookie);</script>"
+  - [ ] Affected source code: media.php
+    - [Link 1](https://core.trac.wordpress.org/browser/tags/4.2.2/src/wp-includes/media.php)
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
@@ -53,8 +53,7 @@ Time spent: **X** hours spent in total
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php) 
 
 ## Assets
-
-List any additional assets, such as scripts or files
+No scripts or files were used for this assignment. 
 
 ## Resources
 
@@ -65,7 +64,7 @@ GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while doing the work
+It was a challenge just to set up Kali Linux and Wordpress; however, otherwie the tasks were straightforward
 
 ## License
 
