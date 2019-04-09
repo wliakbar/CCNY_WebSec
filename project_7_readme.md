@@ -6,15 +6,15 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID: ReFlex Gallery
-  - [ ] Summary: This challenge basically aimed to familiarize use with the functionality of a ReFlex Galler and we were instructed to create a new gallery.
-    - Vulnerability types:
-    - Tested in version: 3.1.3
-    - Fixed in version: 3.1.4
-  - [ ] GIF Walkthrough: ![Lab8C1](https://user-images.githubusercontent.com/32075350/55742699-4bd00500-59fe-11e9-99e1-d3eda41c20a5.gif)
-  - [ ] Steps to recreate: To create a ReFlex galery first go to the respective tab on the tool bar on the left and click add gallery. Once selected name you gallery accordingly; then go to add images and select the gallery you want to add them to. Here upload te images you want the gallery to include and once done click save changes. Next get the id of the Reflex gallery you created (can be found in the edit gallery tab); copy paste this id into the page or post you want to have the gallery in and upload!
-  - [ ] Affected source code: Not applicable in this challenge. 
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+1. (Required) Vulnerability Name or ID: WordPress <= 4.2.2 - Authenticated Stored Cross-Site Scripting (XSS)
+  - [ ] Summary: This challenge basically exploited a cross site scripting vulnerability in which if the user simply has to mouse over the link.
+    - Vulnerability types: Stored Cross-Site Scripting (XSS)
+    - Tested in version: 4.2.2
+    - Fixed in version: 4.2.3
+  - [ ] GIF Walkthrough:![Lab8_Chal1](https://user-images.githubusercontent.com/32075350/55765807-6bd3e880-5a3f-11e9-8e84-a90d9581913b.gif)
+  - [ ] Steps to recreate: To recreate this vulnerability simply create a post with the following text: <a href="[caption code=">]</a><a title=" onmouseover=alert('HACK') ">link</a>
+  - [ ] Affected source code: post.php
+    - [Link 1](https://core.trac.wordpress.org/browser/tags/4.2.2/src/wp-admin/post.php)
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
