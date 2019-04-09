@@ -15,13 +15,13 @@ Time spent: **X** hours spent in total
   - [ ] Steps to recreate: To recreate this vulnerability simply create a post with the following text: <a href="[caption code=">]</a><a title=" onmouseover=alert('HACK') ">link</a>
   - [ ] Affected source code: post.php
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.2.2/src/wp-admin/post.php)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+1. (Required) Vulnerability Name or ID: WordPress  4.0-4.7.2 - Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
+  - [ ] Summary: This explot take advantage of a XSS vulnerabilty where youtube link embedded into a post triggers the exploit.
+    - Vulnerability types:Stored Cross-Site Scripting (XSS)
+    - Tested in version:4.2.2
+    - Fixed in version: 4.7.3
+  - [ ] GIF Walkthrough: ![Lab8_Chal2](https://user-images.githubusercontent.com/32075350/55766014-9a05f800-5a40-11e9-980e-ceba61acdfc6.gif)
+  - [ ] Steps to recreate: Simply type the following text into a post: [embed src='https://youtube.com/embed/12345\x3csvg onload=alert(1)\x3e'][/embed]
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Required) Vulnerability Name or ID
@@ -31,8 +31,8 @@ Time spent: **X** hours spent in total
     - Fixed in version: 
   - [ ] GIF Walkthrough: 
   - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - [ ] Affected source code: media.php
+    - [Link 1](https://core.trac.wordpress.org/browser/tags/4.2.2/src/wp-includes/media.php)
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
